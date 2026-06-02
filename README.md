@@ -1,5 +1,7 @@
 # X/Twitter VTuber 音樂爆文 Skill
 
+![X/Twitter VTuber 音樂爆文 Skill Banner](assets/banner.svg)
+
 以音樂製作人或 VTuber staff 視角，先爬取熱門話題，再產出適合 X/Twitter 傳播的繁體中文貼文、thread、引用轉推與產業短評。
 
 ## 功能
@@ -10,12 +12,68 @@
 - 台灣繁中：全程使用繁體中文與台灣社群語感。
 - X/Twitter 推送：提供腳本發布單則貼文或 thread；發布前必須由使用者確認。
 
-## 安裝
+## 安裝本 Skill
 
 ```bash
 cd twitter-vtuber-music-writer
 npm install
 ```
+
+## 安裝 Codex
+
+Codex CLI 是 OpenAI 的本機終端 coding agent。官方目前建議 macOS/Linux 使用 standalone installer：
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+第一次啟動：
+
+```bash
+codex
+```
+
+首次執行會提示登入，可使用 ChatGPT 帳號或 API key。更新 standalone 版本時，重新執行同一個 installer 即可。
+
+Windows 可原生在 PowerShell 使用 Codex，或在需要 Linux-native 環境時使用 WSL2；詳細設定請參考 [OpenAI Codex CLI 官方文件](https://developers.openai.com/codex/cli)。
+
+## 安裝 Claude Code
+
+Claude Code 是 Anthropic 的 coding agent。官方快速開始目前推薦 Native Install：
+
+macOS、Linux、WSL：
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Windows PowerShell：
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+Windows CMD：
+
+```cmd
+curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
+
+也可使用套件管理器安裝：
+
+```bash
+brew install --cask claude-code
+winget install Anthropic.ClaudeCode
+npm install -g @anthropic-ai/claude-code
+```
+
+安裝後在專案目錄啟動：
+
+```bash
+claude
+```
+
+首次執行會提示登入，可使用 Claude 訂閱、Claude Console，或企業雲端提供商帳戶。若使用 npm 安裝，官方文件建議使用 Node.js 18 或更新版本，並避免 `sudo npm install -g`。更多安裝選項請參考 [Claude Code 官方快速開始](https://code.claude.com/docs/zh-TW/quickstart) 與 [Advanced setup](https://code.claude.com/docs/en/getting-started)。
 
 ## 設定 X/Twitter API
 
@@ -76,6 +134,8 @@ twitter-vtuber-music-writer/
 ├── README.md
 ├── package.json
 ├── .env.example
+├── assets/
+│   └── banner.svg
 ├── reference/
 │   ├── viral_style.md
 │   ├── writing_style.md
