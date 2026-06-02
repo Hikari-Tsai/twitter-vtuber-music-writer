@@ -1,0 +1,56 @@
+[config]
+model = "gpt-5.5-2026-04-23"
+fallback_models = ["gpt-5.4-mini"]
+git_provider = "github"
+response_language = "zh-TW"
+publish_output = true
+add_repo_metadata = true
+
+[ignore]
+glob = [
+  "node_modules/**",
+  "dist/**",
+  "build/**",
+  "coverage/**",
+  ".env",
+  ".env.*",
+  "package-lock.json",
+  "pnpm-lock.yaml",
+  "yarn.lock"
+]
+
+[pr_reviewer]
+persistent_comment = true
+final_update_message = true
+require_score_review = true
+require_tests_review = true
+require_estimate_effort_to_review = true
+extra_instructions = """\
+請用台灣繁體中文回覆。
+
+Review 時請特別關注：
+- Node.js 腳本的錯誤處理、非同步流程與 exit code 是否正確。
+- GitHub Actions、環境變數與 secrets 是否有外洩或誤用風險。
+- Twitter/X 發文流程是否保留使用者最終核准，不可自動發布未核准內容。
+- 爬取、引用與摘要外部來源時，是否保留來源脈絡並避免過度引用。
+- README、SKILL.md 與 scripts 的行為描述是否一致。
+
+若問題只是風格偏好，請標為 Nit；真正可能造成錯誤、資安風險、資料外洩、未授權發布或使用者體驗退化的項目才列為主要 findings。
+"""
+
+[pr_description]
+publish_description_as_comment = true
+generate_ai_title = true
+extra_instructions = """\
+請用台灣繁體中文產生 PR 摘要。摘要要簡潔說明：
+- 這個 PR 改了什麼。
+- 對技能使用流程有什麼影響。
+- 是否新增或變更任何環境變數、secret、GitHub Actions 或發文行為。
+"""
+
+[pr_code_suggestions]
+num_code_suggestions = 5
+suggestions_score_threshold = 7
+extra_instructions = """\
+優先提供能降低實際風險或提升維護性的建議。避免提出只為了格式或個人偏好的修改。
+"""
