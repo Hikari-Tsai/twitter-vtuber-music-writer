@@ -1,7 +1,7 @@
 {
   "name": "twitter-vtuber-music-writer",
   "version": "2.0.0",
-  "description": "以音樂製作人或 VTuber staff 視角撰寫繁體中文 X/Twitter 爆文，支援發布單則貼文與 thread。",
+  "description": "參考使用者發文語氣，爬取熱文後創作繁體中文 X/Twitter VTuber 音樂故事，支援發布單則貼文與 thread。",
   "main": "scripts/post-to-twitter.js",
   "scripts": {
     "post": "node scripts/post-to-twitter.js"
