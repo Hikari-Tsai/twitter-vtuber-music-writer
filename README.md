@@ -1,14 +1,14 @@
-# X/Twitter VTuber 音樂心得 Skill
+# X/Twitter VTuber 音樂故事 Skill
 
-![X/Twitter VTuber 音樂心得 Skill Banner](assets/banner.svg)
+![X/Twitter VTuber 音樂故事 Skill Banner](assets/banner.svg)
 
-參考你的發文語氣，先爬取 X/Twitter 熱文、官方來源與近期討論，再用音樂製作人或 VTuber staff 視角，產出適合 X/Twitter 傳播的繁體中文心得、thread、引用轉推與產業短評。
+參考你的發文語氣，先爬取 X/Twitter 熱文、官方來源與近期討論，抽取熱門話題的情緒、場景與敘事節奏，再用音樂製作人或 VTuber staff 視角，創作以你自己為出發點的繁體中文故事、感想式短文、thread、引用轉推與產業寓言。
 
 ## 功能
 
 - 個人語氣校準：可依你的 X/Twitter 帳號、貼文樣本或草稿抽取句型、節奏、口頭禪與觀點強度。
-- 熱門話題研究：優先查 X/Twitter 熱文、官方帳號、YouTube、官網公告、活動與音樂平台資料。
-- 心得創作：把原創曲、翻唱、MV、3D live、演唱會、專輯與產業事件寫成像你本人會發的高傳播貼文。
+- 熱門話題採樣：優先查 X/Twitter 熱文、官方帳號、YouTube、官網公告、活動與音樂平台資料，抽取情緒、衝突與敘事節奏。
+- 原創故事：不只是整理文章，而是把原創曲、翻唱、MV、3D live、演唱會、專輯與產業事件轉化成像你本人會發的第一人稱創作。
 - 專業視角：從編曲、混音、聲線設計、舞台、鏡頭、營運與粉絲情緒切入。
 - 台灣繁中：全程使用繁體中文與台灣社群語感。
 - X/Twitter 推送：提供腳本發布單則貼文或 thread；發布前必須由使用者確認。
@@ -96,20 +96,20 @@ TWITTER_ACCESS_SECRET=your_access_secret
 ```text
 /twitter-vtuber-music-writer
 
-參考我的 X 發文語氣，先爬最近熱門的 VTuber 原創曲話題，再寫一篇心得。
+參考我的 X 發文語氣，先爬最近熱門的 VTuber 原創曲話題，再虛構一篇以我自己為出發點的故事。
 ```
 
 ```text
 /twitter-vtuber-music-writer
 
 這是我平常的貼文樣本：[貼 5-10 則]
-請先爬熱文，再用我的語氣寫一則音樂製作人視角的心得。
+請先爬熱文，不要整理，改成用我的語氣寫一則音樂製作人視角的第一人稱創作。
 ```
 
 ```text
 /twitter-vtuber-music-writer
 
-用 VTuber staff 角度分析這場 3D live，寫成 7 則 thread，語氣要像我平常在 X 上碎念。
+用 VTuber staff 角度，把這場 3D live 的熱門討論改寫成 7 則故事 thread，語氣要像我平常在 X 上碎念。
 ```
 
 ```text
@@ -147,6 +147,7 @@ twitter-vtuber-music-writer/
 ├── reference/
 │   ├── viral_style.md
 │   ├── personal_voice_style.md
+│   ├── creative_story_style.md
 │   ├── writing_style.md
 │   ├── checklist_methodology_style.md
 │   ├── contrarian_opinion_style.md
@@ -160,6 +161,6 @@ twitter-vtuber-music-writer/
 ## 注意
 
 - 發布前務必確認來源、日期、名稱與字數。
-- 不把傳聞寫成事實。
+- 不把傳聞或虛構故事寫成事實。
 - 不自動發布未經使用者確認的內容。
 - `.env` 不可提交到 Git。

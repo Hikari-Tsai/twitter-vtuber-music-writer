@@ -4,8 +4,9 @@
 
 | 檔案 | 用途 |
 | --- | --- |
-| `personal_voice_style.md` | 使用者本人發文語氣抽取與心得成稿規則 |
-| `viral_style.md` | 熱門話題、重大公告、原創曲與 live 高傳播心得 |
+| `personal_voice_style.md` | 使用者本人發文語氣抽取與第一人稱成稿規則 |
+| `creative_story_style.md` | 熱門話題轉化成原創故事的規則 |
+| `viral_style.md` | 熱門話題、重大公告、原創曲與 live 高傳播短文 |
 | `writing_style.md` | 音樂製作人 / VTuber staff 基礎視角 |
 | `checklist_methodology_style.md` | 清單型 thread 與方法論拆解 |
 | `contrarian_opinion_style.md` | 反常識產業觀點 |
